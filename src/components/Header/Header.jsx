@@ -69,10 +69,10 @@ function Header() {
           </ul>
 
           <button onClick={handleClick} className="md:hidden">
-            {isHide ? <img src="menu.svg" alt="menu-icon" /> : <img src="x.svg" alt="x-icon" />}
+            {isHide ? <img src="/menu.svg" alt="menu-icon" /> : <img src="/x.svg" alt="x-icon" />}
           </button>
           {isHide ? "" : 
-            <ul className="absolute flex flex-col w-40 gap-1 md:hidden top-16 right-2 border rounded-xl duration-200 p-1 bg-transparent backdrop-blur-xl">
+            <ul className="absolute z-50 flex flex-col w-40 gap-1 md:hidden top-16 right-2 border rounded-xl duration-200 p-1 bg-transparent backdrop-blur-xl">
               {navItems.map( (item) => 
                 item.active ? (
                   <li key={item.name}>
